@@ -10,6 +10,7 @@ graph = {
     'F': {'C', 'E'}
 }
 
+
 def bfs(graph, start):
     visited = set()
     queue = deque([start])
@@ -21,6 +22,7 @@ def bfs(graph, start):
             if neighbor not in visited:
                 visited.add(neighbor)
                 queue.append(neighbor)
+
 
 if __name__ == '__main__':
     bfs(graph, 'A')

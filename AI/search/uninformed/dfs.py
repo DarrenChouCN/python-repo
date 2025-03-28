@@ -7,6 +7,7 @@ graph = {
     'F': {'C', 'E'}
 }
 
+
 # Depth-First Search (DFS)
 def dfs(graph, start, visited=None):
     if visited is None:
@@ -17,6 +18,7 @@ def dfs(graph, start, visited=None):
         if next_node not in visited:
             dfs(graph, next_node, visited)
     return visited
+
 
 if __name__ == '__main__':
     dfs(graph, 'A')
